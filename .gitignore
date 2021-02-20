@@ -13,13 +13,9 @@
 .DS_Store
 
 # Ignore build directories and tmp folders
-build
-languages
+assets/build/*.map
 misc/tmp
 node_modules
 tests/output
 vendor
-assets/js
-assets/build
-assets/css
 phpcs-report.txt

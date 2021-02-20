@@ -5,51 +5,46 @@
  * @package AwesomeMotive\Miusage
  */
 
-declare(strict_types=1);
-
 /**
- * A simple plugin for AwesomeMotive
+ * A simple plugin for Awesome Motive
  *
- * @package wpMonstar
+ * @package AwesomeMotive\Miusage
  *
  * @wordpress-plugin
- * Plugin Name: Miusage -  A simple plugin for AwesomeMotive
+ * Plugin Name: Miusage - A simple plugin for Awesome Motive
  * Plugin URI: https://awesomemotive.com
- * Description: A Multi-vendor Marketplace for WooCommerce
+ * Description: A simple plugin for Awesome Motive
  * Version: 1.0.0
  * Author: AwesomeMotive
  * Author URI: https://awesomemotive.com
  * License: GPL2
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain: bazaar
+ * Text Domain: miusage
  * Domain Path: /languages
  * Requires at least: 5.3
  * Requires PHP: 5.6
- * WC requires at least: 3.0.0
- * WC tested up to: 4.8
  */
 
-use AwesomeMotive\Miusage;
+use AwesomeMotive\Miusage\Miusage;
 
 defined( 'ABSPATH' ) || exit;
-defined( 'BAZAAR_FILE' ) || define( 'BAZAAR_FILE', __FILE__ );
+defined( 'MIUSAGE_FILE' ) || define( 'MIUSAGE_FILE', __FILE__ );
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-if ( ! function_exists( 'bazaar' ) ) {
+if ( ! function_exists( 'miusage' ) ) {
 
 	/**
 	 * Get the main instance of the plugin.
 	 *
 	 * @since 1.0.0
 	 *
-	 * @return Awesomemotive
+	 * @return Miusage;
 	 */
-	function bazaar(): Awesomemotive {
-		return Awesomemotive::instance();
+	function miusage() {
+		return Miusage::instance();
 	}
-
-	// Kick off the plugin.
-	bazaar();
 }
 
+// Kick off the plugin.
+miusage();

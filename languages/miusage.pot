@@ -1,0 +1,62 @@
+# Copyright (C) 2021 AwesomeMotive
+# This file is distributed under the GPL2.
+msgid ""
+msgstr ""
+"Project-Id-Version: Miusage - A simple plugin for Awesome Motive 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/miusage\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-05-11T09:39:35+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.5.0-alpha-0263ed1\n"
+"X-Domain: miusage\n"
+
+#. Plugin Name of the plugin
+msgid "Miusage - A simple plugin for Awesome Motive"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://awesomemotive.com"
+msgstr ""
+
+#. Description of the plugin
+msgid "A simple plugin for Awesome Motive"
+msgstr ""
+
+#. Author of the plugin
+msgid "AwesomeMotive"
+msgstr ""
+
+#: src/Abstracts/AjaxController.php:32
+msgid "Sorry, seems your are not allowed to make the request."
+msgstr ""
+
+#: src/CLI/Commands/RefreshUsers.php:31
+msgid "There is nothing to be cleared."
+msgstr ""
+
+#: src/CLI/Commands/RefreshUsers.php:37
+msgid "Something went wrong! Please try again"
+msgstr ""
+
+#: src/CLI/Commands/RefreshUsers.php:40
+msgid "Refreshed User Lists!"
+msgstr ""
+
+#: src/ServiceProviders/AdminMenu.php:40
+#: src/ServiceProviders/AdminMenu.php:41
+#: src/Templates/miusage.php:11
+msgid "Miusage"
+msgstr ""
+
+#: src/ServiceProviders/AdminMenu.php:50
+msgid "Users List"
+msgstr ""
+
+#: src/Templates/miusage.php:15
+msgid "Users"
+msgstr ""

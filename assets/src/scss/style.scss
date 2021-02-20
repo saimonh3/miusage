@@ -1,0 +1,78 @@
+@import "./colors";
+
+#wpcontent {
+  padding-left: 0;
+}
+
+.awesomemotive-miusage {
+  border-top: 3px solid $orange;
+  padding: 20px;
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .awesomemotive-miusage__logo {
+    color: $orange;
+    font-size: 2em;
+    padding-bottom: 20px;
+  }
+
+  .awesomemotive-miusage__menu {
+    background-color: $white;
+    font-size: 1em;
+    margin: 0 -20px 20px -20px;
+    padding: 0 20px;
+  }
+
+  .awesomemotive-miusage__container {
+    background-color: $white;
+    margin: 0 0 20px;
+    padding: 30px;
+    border: 1px solid #E5E6E6;
+    line-height: 2;
+  }
+}
+
+.awesomemotive-miusage__tab {
+  box-shadow: none;
+  color: #666;
+  display: inline-block;
+  margin-right: 1.8rem;
+  padding: 20px 0 18px 0;
+  text-decoration: none;
+
+  &.awesomemotive-miusage__active {
+    border-bottom: 2px solid $orange;
+  }
+
+  &:hover {
+    border-bottom-color: $lite-gray;
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.awesomemotive-miusage-users {
+  overflow-x: auto;
+  table {
+    border-collapse: collapse;
+    width: 100%;
+
+    td, th {
+      padding: .75rem;
+      vertical-align: top;
+      border-top: 1px solid $gray;
+    }
+  }
+}
+
+@media screen and (max-width: 782px) {
+  #wpcontent {
+    padding-left: 0 !important;
+  }
+}

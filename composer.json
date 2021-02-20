@@ -1,6 +1,6 @@
 {
   "name": "awesomemotive/miusage",
-  "description": "A simple plugin",
+  "description": "A simple plugin for Awesome Motive",
   "version": "1.0.0",
   "type": "wordpress-plugin",
   "minimum-stability": "stable",
@@ -43,6 +43,6 @@
     "test:setup": "bash tests/bin/install.sh wp_tests root '' localhost",
     "test:coverage": "@test --coverage-text",
     "phpcs": "vendor/bin/phpcs -p --standard=phpcs.xml.dist",
-    "phpcs:all": "@phpcs src/ wp-bazaar.php"
+    "phpcs:all": "@phpcs src/ miusage.php"
   }
 }
