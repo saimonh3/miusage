@@ -1,0 +1,25 @@
+# ignore packaged files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Ignore system created fils
+.idea
+.DS_Store
+
+# Ignore build directories and tmp folders
+build
+languages
+misc/tmp
+node_modules
+tests/output
+vendor
+assets/js
+assets/build
+assets/css
+phpcs-report.txt

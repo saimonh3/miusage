@@ -1,0 +1,17 @@
+{
+  "name": "miusage",
+  "description": "Best Multivendor Marketplace for WooCommerce",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "@wordpress/scripts": "^12.1.1"
+  },
+  "scripts": {
+    "dev": "wp-scripts start assets/src/main.js --output-path=assets/js",
+    "build": "wp-scripts build assets/src/main.js --output-path=assets/build",
+    "lint:js": "wp-scripts lint-js assets/src/",
+    "lint:css": "wp-scripts lint-style assets/src/",
+    "format:js": "wp-scripts format-js assets/src/",
+    "make-pot": "wp i18n make-pot ./ languages/bazaar.pot --exclude=assets"
+  }
+}

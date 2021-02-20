@@ -1,0 +1,48 @@
+{
+  "name": "awesomemotive/miusage",
+  "description": "A simple plugin",
+  "version": "1.0.0",
+  "type": "wordpress-plugin",
+  "minimum-stability": "stable",
+  "license": "GPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "awesomemotive",
+      "email": "contact@awesomemotive.com"
+    }
+  ],
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "AwesomeMotive\\Miusage\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "AwesomeMotive\\Miusage\\Tests\\": "tests/php"
+    }
+  },
+  "require": {
+    "php": ">=5.6"
+  },
+  "require-dev": {
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+    "phpcompatibility/php-compatibility": "^9.3.0",
+    "phpunit/phpunit": "^5.7",
+    "wp-coding-standards/wpcs": "^2.0"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true,
+    "platform": {
+      "php": "5.6"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit --configuration phpunit.xml.dist",
+    "test:setup": "bash tests/bin/install.sh wp_tests root '' localhost",
+    "test:coverage": "@test --coverage-text",
+    "phpcs": "vendor/bin/phpcs -p --standard=phpcs.xml.dist",
+    "phpcs:all": "@phpcs src/ wp-bazaar.php"
+  }
+}
